@@ -256,7 +256,7 @@ integer function recv( socket, data )
 !  available space on recv. 
 
 ! PARAMETERS  
-   integer, intent(in) :: socket ! The socket to send the data to
+   integer, intent(in) :: socket ! The socket to received the data from
 
 !  data shall be one of: an integer, a double precission, an array from 1 to 7
 !  dimensions of integers or double precisions, or a character string
