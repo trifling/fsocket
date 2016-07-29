@@ -234,9 +234,8 @@ integer function send( socket, data )
 ! PARAMETERS  
    integer, intent(in) :: socket ! The socket to send the data to
 
-   data shall be one of: an integer, a double precission, an array from 1 to 7
-                         dimensions of integers or double precisions, or a character
-                         string
+!  data shall be one of: an integer, a double precission, an array from 1 to 7
+!  dimensions of integers or double precisions, or a character string
 
 ! RETURNS
 !  On success: the number of bytes sent
@@ -259,9 +258,8 @@ integer function recv( socket, data )
 ! PARAMETERS  
    integer, intent(in) :: socket ! The socket to send the data to
 
-   data shall be one of: an integer, a double precission, an array from 1 to 7
-                         dimensions of integers or double precisions, or a character
-                         string
+!  data shall be one of: an integer, a double precission, an array from 1 to 7
+!  dimensions of integers or double precisions, or a character string
 
 ! RETURNS
 !  On success: the number of bytes received 
@@ -305,6 +303,7 @@ integer function lerrno()
 !  Obtain the POSIX numeric code for the last error.
  
 ! RETURNS
+!  The last error
 ```
 
 ```fortran
